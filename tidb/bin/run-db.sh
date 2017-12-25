@@ -12,4 +12,4 @@ pd=$(cat etc/tidb-cluster.json | jq -r 'to_entries | map ("\(.value.host):\(.val
     --host=$host \
     --P=$port \
     --store=tikv \
-    --path=$pd
+    --path=$pd &

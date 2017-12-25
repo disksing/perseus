@@ -10,4 +10,4 @@ pd=$(cat etc/tidb-cluster.json | jq -r 'to_entries | map ("\(.value.host):\(.val
     --log-file=$1.kv.log \
     --log-level=warn \
     --addr="$host:$port" \
-    --store=$name
+    --store=$name &
